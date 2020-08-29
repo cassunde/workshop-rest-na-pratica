@@ -7,7 +7,7 @@ In order to execute the moment of practice quickly and effectively, participants
 
 You will need to perform a simple test on each project to validate them.
 
-** quarkus orders **
+**quarkus orders**
 
 > $ cd order-quarkus
 >
@@ -21,7 +21,7 @@ To validate, we must access the following URL in the browser.
 
 You should return a json something like this:
 
-`` json
+``` json
 [
  {
   "id": "5f346cb5ef47a34fc1df94df",
@@ -33,9 +33,9 @@ You should return a json something like this:
   "value": 10.00
  }
 ]
-``
+```
 
-** spring-orders **
+**spring-orders**
 
 > $ cd order-quarkus
 >
@@ -49,6 +49,6 @@ To validate, we must access the following URL in the browser.
 
 A text should look something like this:
 
-``
+```
 is runnig
-``
+```
