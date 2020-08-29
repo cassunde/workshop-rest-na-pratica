@@ -1,57 +1,54 @@
-## Workshop Rest na Prática
+## Workshop Rest in Practice
 
-Para executarmos o momento da prática de forma rápida e eficaz, participantes devem fazer o Fork desse repositório para suas contas, clonem e testem os 2 projetos que estão aqui.
+In order to execute the moment of practice quickly and effectively, participants must Fork this repository for their accounts, clone and test the 2 projects that are here.
 
-- pedido-quarkus
-- pedido-spring
+- quarkus-order
+- request-spring
 
-Será necessário realizar um teste simples em cada projeto para valida-los.
+You will need to perform a simple test on each project to validate them.
 
-**pedidos-quarkus**
+** quarkus orders **
 
-> $ cd pedido-quarkus
+> $ cd order-quarkus
 >
-> $ ./mvnw quarkus:dev
+> $ ./mvnw quarkus: dev
 
-Esse comando deve levar essa aplicação inicial.
+This command should take that initial application.
 
-Para validarmos devemos acessar no browser a seguinte URL.
+To validate, we must access the following URL in the browser.
 
-> http://localhost:8080/order
+> http: // localhost: 8080 / order
 
-Deve retornar um json mais ou menos assim:
+You should return a json something like this:
 
-```json
+`` json
 [
  {
-  "id":"5f346cb5ef47a34fc1df94df",
-  "amount":1,
-  "client":"nicolas",
-  "dateCreation":"2020-08-12",
-  "pending":true,
-  "product":"canudo",
-  "value":10.00
+  "id": "5f346cb5ef47a34fc1df94df",
+  "amount": 1,
+  "client": "nicolas",
+  "dateCreation": "2020-08-12",
+  "pending": true,
+  "product": "straw",
+  "value": 10.00
  }
 ]
-```
+``
 
-**pedidos-spring**
+** spring-orders **
 
-> $ cd pedido-quarkus
+> $ cd order-quarkus
 >
-> $ ./mvnw spring-boot:run
+> $ ./mvnw spring-boot: run
 
-Esse comando deve levar essa aplicação inicial.
+This command should take that initial application.
 
-Para validarmos devemos acessar no browser a seguinte URL.
+To validate, we must access the following URL in the browser.
 
-> http://localhost:8080/order
+> http: // localhost: 8080 / order
 
-Deve retornar um texto mais ou menos assim:
+A text should look something like this:
 
-```
+``
 is runnig
-```
-
-
-
+``
