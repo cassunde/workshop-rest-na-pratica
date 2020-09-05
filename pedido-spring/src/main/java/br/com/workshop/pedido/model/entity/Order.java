@@ -1,11 +1,17 @@
 package br.com.workshop.pedido.model.entity;
 
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
+@Document
 public class Order {
 
+    @Id
     public String id;
+
     public String client;
     public String product;
     public Integer amount;
@@ -21,6 +27,9 @@ public class Order {
         this.value = value;
         this.dateCreation = dateCreation;
         this.pending = pending;
+    }
+
+    public Order() {
     }
 
     public void setId(String id) {
