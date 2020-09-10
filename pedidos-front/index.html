@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Inicial</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.css">
+</head>
+<body>
+    <h1>Projeto</h1>    
+    <div class="well">
+        <div class="row" >
+            <form action="">
+                <input type="hidden" id="txtId">
+                <input type="hidden" id="txtPending">
+                <div class="col-md-3">
+                    <label for="basic-url">Cliente</label>
+                    <div class="input-group mb-12">
+                        <div class="input-group-prepend">
+                        </div>
+                        <input type="text" class="form-control" id="txtClient" aria-describedby="basic-addon3">
+                    </div>
+                </div>        
+                <div class="col-md-3">
+                    <label for="basic-url">Produto</label>
+                    <div class="input-group mb-12">
+                        <div class="input-group-prepend">
+                        </div>
+                        <input type="text" class="form-control" id="txtProduct" aria-describedby="basic-addon3">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <label for="basic-url">Valor</label>
+                    <div class="input-group mb-12">
+                        <div class="input-group-prepend">
+                        </div>
+                        <input type="text" class="form-control" id="txtValue" aria-describedby="basic-addon3">
+                    </div>
+                </div>        
+                <hr>
+                <input id="btnSave" type="button" class="btn btn-primary" value="Salvar" onclick="btnSalvar()" />
+                <input id="btnDelete" type="button" class="btn btn-danger" value="Deletar" onclick="btnDeletes()" disabled />
+            </form>            
+        </div>        
+        <div class="row">
+            <table id="table-order" class="table">
+                <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>cliente</th>
+                        <th>Produto</th>
+                        <th>Preço</th>
+                        <th>action</th>
+                    </tr>
+                </thead>
+                <tbody id="table-order-body" >                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+<script src="./index.js" ></script>
+</html>
